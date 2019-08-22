@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+   2 kind: Deployment
+   3 metadata:
+   4   name: hostname-101-deployment
+   5 spec:
+   6   replicas: 3
+   7   selector:
+   8     matchLabels:
+   9       app: hostname
+  10       appVersion: v101
+  11   template:
+  12     metadata:
+  13       labels:
+  14         app: hostname
+  15         appVersion: v101
+  16       containers:
+  17         - name: nginx-hostname
+  18           image: kubegoldenguide/nginx-hostname:1.0.1
+  19           ports:
+  20             - containerPort: 80
