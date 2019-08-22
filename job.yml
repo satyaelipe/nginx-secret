@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dice-job
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      name: dice-pod
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: dice
+          image: alpine
+          command: ['bin/sh']
+          args: ['-c', "if [ \"$(shuf -i 1-6 -n 1)\" = \"6\" ]; then exit 0; else exit 1; fi"]
