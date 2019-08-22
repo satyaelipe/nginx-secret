@@ -1,0 +1,24 @@
+{
+   "kind": "SealedSecret",
+   "apiVersion": "bitnami.com/v1alpha1",
+   "metadata": {
+     "name": "mysql",
+     "namespace": "default",
+     "creationTimestamp": null
+   },
+   "spec": {
+     "template": {
+       "metadata": {
+         "name": "mysql",
+         "namespace": "default",
+         "creationTimestamp": null
+       }
+     },
+     "encryptedData": {
+       "password": "AgBVVubRuyxxMJnYANB++T4+dhX9sSkX5ezmPgpCBWBF3NCEwxz1zF17WIMGQO69Bmbte9JS2hwGg307TU6ge9W0Uz7mSpcPo0KyfurkTT/7xKk9uRGrpHXxKuXDkKEfl+             HqvucyYrJpTua7m1u1xyexwLE3Y2t7flvULHl0B30hsq7hi4JTjRQQnhN8SAX/dXIL94vdXzaCxFDu2GrmI88tE+DBrMWw3V2BQEHDlU4OwtKyKwf+     7JniQrkRLtMF3CUH3jCNsiDbmZ1mKVJFi8jHPJWFdLaoAdOhCYiJKQ5+1OT/nHHqIOJNKQIi/Hqedbynq43M00Q6Bp/6YW1ayNaB/                  tCT5lT8aZfxCen1m7HRUrAyGRA0c7AzR/dmUkeGGBTwsXx2itNAbaPMNy/Ip5Ns9bTXAHws9hKNEGIJtBU6DuncuOmkeFlxDV676PSkbIA6+PvSTyJ2+21KehHpWcgpyTjq36rAgIzT3NpH/BEUWU80pG598Hk4N4Y6+vbZ3hMLMTUSl7xDot2xwYV2Kp9XtwqBE8pDYq69mEBX1lAVX60wUR2/WhczL4ixJMvffob/uJKRTX65zl7W3fEcVgi6KHSuxglgC4Og0ea+Fq8wqPUEqUYf/Bshy1AM2ZmDz8kNrCRpL7NcMCTbQ+vsgzitPVK9vtSAX6t9lHb1IwWYbV9miKjQQykcbCoqcq7zL1Pfj5HX"   
+   }
+   },
+   "status": {
+
+   }
+ }
